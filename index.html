@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloning Repo</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Job Hunt</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="nav-left">
+            <a href="index.html">
+                <img class="logo" src="./images/job.png" alt="logo">
+                <h5>Job<span> Hunt</span></h5>
+            </a>
+        </div>
+        <div class="nav-right">
+          <button><a href="">Contact Us</a></button>
+        </div>
+      </nav>
+      <div class="form-hold">
+        <h4>Search Job</h4>
+        <!-- form  -->
+        <form action="">
+            <!-- Job Title -->
+          <label for="jobTitle">Job Title</label>
+          <input
+            class="input"
+            type="text"
+            id="jobTitle"
+            name="jobTitle"
+            placeholder="Enter Job Role"
+          />
+          <!-- Location -->
+          <div class="ins">
+            <div class="left">
+              <label for="location">Location</label>
+              <input
+                class="ii"
+                type="text"
+                type="text"
+                id="location"
+                name="location"
+                placeholder="Enter Location"
+              />
+            </div>
+
+            <!-- Date -->
+            <div class="right">
+              <label for="date">Year</label>
+              <input class="ii" type="date" id="date" name="date" />
+            </div>
+          </div>
+          <!-- File Type -->
+          <div class="ins">
+            <label for="fileType">File Type</label>
+            <select class="input" name="file" id="file">
+              <option value="Excel">Excel</option>
+              <option value="CSV">CSV</option>
+            </select>
+          </div>
+          <!-- Sites -->
+          <div class="site">
+            <label for="site">Website</label>
+            <div class="sites">
+                <div class="all">
+                    <input class="single" type="checkbox" name="indeed" id="">
+                    <span>Indeed</span>
+                </div>
+                <div class="all">
+                    <input class="single" type="checkbox" name="indeed" id="">
+                    <span>Glassdoor</span>
+                </div>
+                <div class="all">
+                    <input class="single" type="checkbox" name="indeed" id="">
+                    <span>ZipRecruiter</span>
+                </div>
+            </div>
+          </div>
+          <button type="submit">Find Job</button>
+        </form>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>
